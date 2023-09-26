@@ -13,7 +13,14 @@ const Hero = () => {
             </span>
             <br />
             <TypeAnimation
-              sequence={["Andreas", 1000, "Full Stack Developer", 1000]}
+              sequence={[
+                "Andreas",
+                1500,
+                "Self-Taught",
+                1500,
+                "Full Stack Developer",
+                1500,
+              ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -36,7 +43,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-xl bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative">
+          <div className="rounded-xl w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative">
             <Image
               className="rounded-xl absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src="/assets/image1.png"

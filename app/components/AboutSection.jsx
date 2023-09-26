@@ -35,7 +35,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>NodeJs</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Express</li>
         <li>PostgreSQL(PSQL)</li>
         <li>MongoDB</li>
         <li>Firebase</li>
@@ -43,8 +43,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Testing(TDD)",
-    id: "testing",
+    title: "Testing (TDD)",
+    id: "testing (tdd)",
     content: (
       <ul className="list-disc pl-2">
         <li>Jest</li>
@@ -67,13 +67,15 @@ const AboutSection = () => {
   return (
     <section className="text-white ">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          src="/assets/dev.png"
-          alt="about"
-          width={500}
-          height={500}
-          className="rounded-xl"
-        />
+        <div className="">
+          <Image
+            src="/assets/dev.png"
+            alt="about"
+            width={570}
+            height={570}
+            className="rounded-xl"
+          />
+        </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg ">
@@ -93,7 +95,7 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("languages")}
               active={tab === "languages"}
             >
-              Languages
+              Programming Languages
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("front end")}
@@ -108,13 +110,13 @@ const AboutSection = () => {
               Back End
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("testing")}
-              active={tab === "testing"}
+              selectTab={() => handleTabChange("testing (tdd)")}
+              active={tab === "testing (tdd)"}
             >
-              Testing(TDD)
+              Testing (TDD)
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
