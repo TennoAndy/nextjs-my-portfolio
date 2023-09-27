@@ -16,8 +16,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Front End",
-    id: "front end",
+    title: "FrontEnd",
+    id: "frontend",
     content: (
       <ul className="list-disc pl-2">
         <li>React</li>
@@ -30,8 +30,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Back End",
-    id: "back end",
+    title: "BackEnd",
+    id: "backend",
     content: (
       <ul className="list-disc pl-2">
         <li>NodeJs</li>
@@ -43,8 +43,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Testing (TDD)",
-    id: "testing (tdd)",
+    title: "Testing",
+    id: "testing",
     content: (
       <ul className="list-disc pl-2">
         <li>Jest</li>
@@ -67,15 +67,13 @@ const AboutSection = () => {
   return (
     <section className="text-white ">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="">
-          <Image
-            src="/assets/dev.png"
-            alt="about"
-            width={570}
-            height={570}
-            className="rounded-xl"
-          />
-        </div>
+        <Image
+          src="/assets/dev.png"
+          alt="about"
+          width={570}
+          height={570}
+          className="rounded-xl"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg ">
@@ -95,25 +93,25 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("languages")}
               active={tab === "languages"}
             >
-              Programming Languages
+              Languages
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("front end")}
-              active={tab === "front end"}
+              selectTab={() => handleTabChange("frontend")}
+              active={tab === "frontend"}
             >
-              Front End
+              FrontEnd
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("back end")}
-              active={tab === "back end"}
+              selectTab={() => handleTabChange("backend")}
+              active={tab === "backend"}
             >
-              Back End
+              BackEnd
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("testing (tdd)")}
-              active={tab === "testing (tdd)"}
+              selectTab={() => handleTabChange("testing")}
+              active={tab === "testing"}
             >
-              Testing (TDD)
+              Testing
             </TabButton>
           </div>
           <div className="mt-4">
