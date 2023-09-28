@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Muggle News",
     description:
-      "Muggle News is a news and blogging Platform with with lots of functionality",
+      "Muggle News is a full-stack, feature-rich news and blogging platform with a wide range of functionalities. Click the link to GitHub to explore it",
     image: "/assets/MuggleNews.png",
     tag: ["All", "Entertainment"],
     gitUrl: "https://github.com/TennoAndros/FE-Andros-News",
