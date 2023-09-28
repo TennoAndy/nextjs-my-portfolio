@@ -7,7 +7,8 @@ const Footer = () => {
         <span>
           <Image src="/assets/logo.png" alt="log" width={100} height={100} />
         </span>
-        <p className="text-slate-600">2023 © All rights reserved.</p>
+        <p className="text-slate-600">© All Rights Reserved.</p>
+        <p className="text-slate-600">9-2023</p>
       </div>
     </footer>
   );
