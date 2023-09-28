@@ -8,6 +8,10 @@ import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
+    title: "Top",
+    path: "#top",
+  },
+  {
     title: "About",
     path: "#about",
   },
@@ -48,14 +52,10 @@ const Nav = () => {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="nav">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 scroll-smooth">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink
-                  href={link.path}
-                  title={link.title}
-                  className="scroll-smooth"
-                />
+                <NavLink href={link.path} title={link.title} />
               </li>
             ))}
           </ul>

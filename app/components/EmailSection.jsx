@@ -42,8 +42,8 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          As a budding developer eager to embark on a fulfilling career in the
-          tech industry, I&apos;m actively seeking job opportunities where I can
+          As a new developer eager to embark on a fulfilling career in the tech
+          industry, I&apos;m actively seeking job opportunities where I can
           apply my skills and passion for coding. Whether you have a job opening
           that aligns with my aspirations or if you simply wish to connect and
           exchange insights, please feel free to reach out to me here. I&apos;m
@@ -110,6 +110,7 @@ const EmailSection = () => {
             />
           </div>
           <button
+            onClick={() => alert("Sorry this function is still in progress!")}
             type="submit"
             className="bg-gradient-to-tr from-primary-500 via-secondary-600 to-tertiary-500 hover:bg-gradient-to-l  hover:bg-opacity-75 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
