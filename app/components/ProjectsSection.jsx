@@ -11,7 +11,7 @@ const projectsData = [
     description:
       "Muggle News is a full-stack, feature-rich news and blogging platform with a wide range of functionalities. Click the link to GitHub to explore it",
     image: "/assets/MuggleNews.png",
-    tag: ["All", "Entertainment"],
+    tag: ["All", "Network"],
     gitUrl: "https://github.com/TennoAndros/FE-Andros-News",
     previewUrl: "https://mugglenews.netlify.app/",
   },
@@ -31,7 +31,7 @@ const projectsData = [
     description:
       "Globly is a social media app where users can connect with friends, create posts and more.",
     image: "/assets/Globly.png",
-    tag: ["All", "Entertainment"],
+    tag: ["All", "Network"],
     gitUrl: "https://github.com/TennoAndros/Fullstack-MERN-Globly",
     previewUrl: "https://fullstack-mern-globly.pages.dev/",
   },
@@ -41,7 +41,7 @@ const projectsData = [
     description:
       "BlaBla is a real-time chat platform where users can log in with Google or Facebook, create chat rooms, and engage in real-time conversations with friends, allowing them to send not only text but also images, files, and more.",
     image: "/assets/BlaBla.png",
-    tag: ["All", "Entertainment"],
+    tag: ["All", "Network"],
     gitUrl: "https://github.com/TennoAndros/Firebase-BlaBla",
     previewUrl: "https://realtime-chat-blabla.netlify.app/",
   },
@@ -51,7 +51,7 @@ const projectsData = [
     description:
       "PromptVerse is an app where users can create AI prompts, search for existing ones, and copy them for use with their preferred AI.",
     image: "/assets/PromptVerse.png",
-    tag: ["All", "Entertainment"],
+    tag: ["All", "Network"],
     gitUrl: "https://github.com/TennoAndros/fs-nextjs-ai-promptverse",
     previewUrl: "https://fs-nextjs-ai-promptverse.vercel.app/",
   },
@@ -88,8 +88,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          tag="Entertainment"
-          isSelected={tag === "Entertainment"}
+          tag="Network"
+          isSelected={tag === "Network"}
         />
         <ProjectTag
           onClick={handleTagChange}
