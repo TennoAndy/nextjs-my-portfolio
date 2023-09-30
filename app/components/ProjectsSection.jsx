@@ -55,6 +55,15 @@ const projectsData = [
     gitUrl: "https://github.com/TennoAndros/fs-nextjs-ai-promptverse",
     previewUrl: "https://fs-nextjs-ai-promptverse.vercel.app/",
   },
+  {
+    id: 6,
+    title: "Pac-Man",
+    description: "A simple classic Pac-Man with original sound effects",
+    image: "/assets/Pac-Man.png",
+    tag: ["All", "Gaming"],
+    gitUrl: "https://github.com/TennoAndros/mini-game-pacman",
+    previewUrl: "https://minigame-pac-man.netlify.app/",
+  },
 ];
 
 const ProjectsSection = () => {
