@@ -2,6 +2,8 @@
 
 Welcome to my portfolio app built with Next.js, React, and Tailwind CSS. This app serves as a showcase of my work and provides information about me and my projects.
 
+You can access the deployed version of My Portfolio Website [here](https://andreas-portfolio-mu.vercel.app/).
+
 ## Getting Started
 
 To run this app locally, follow these steps:
