@@ -21,7 +21,7 @@ const projectsData = [
     description:
       "DiagonAlley is a straightforward E-commerce app that allows you to add items to your basket and complete transactions.",
     image: "/assets/DiagonAlley.png",
-    tag: ["All", "Commerce"],
+    tag: ["All", "Ecommerce"],
     gitUrl: "https://github.com/TennoAndros/Fullstack-ECommerce-DiagonAlley",
     previewUrl: "/not hosted",
   },
@@ -102,8 +102,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          tag="Commerce"
-          isSelected={tag === "Commerce"}
+          tag="Ecommerce"
+          isSelected={tag === "Ecommerce"}
         />
         <ProjectTag
           onClick={handleTagChange}
