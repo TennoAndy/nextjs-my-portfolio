@@ -64,6 +64,15 @@ const projectsData = [
     gitUrl: "https://github.com/TennoAndros/mini-game-pacman",
     previewUrl: "https://minigame-pac-man.netlify.app/",
   },
+  {
+    id: 7,
+    title: "Memory Game",
+    description: "A simple match the cards memory game",
+    image: "/assets/memory-game.png",
+    tag: ["All", "Gaming"],
+    gitUrl: "https://github.com/TennoAndros/memory-card-game",
+    previewUrl: "https://memory-game-tennoandros.netlify.app/",
+  },
 ];
 
 const ProjectsSection = () => {
