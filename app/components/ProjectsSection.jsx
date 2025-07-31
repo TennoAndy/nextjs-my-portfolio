@@ -17,6 +17,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Book Talk",
+    description:
+      "Book-Talk was created as the final project for Coding Factory 5 at the Athens University of Economics and Business. You can read all of its features by clicking the link, which leads to the frontend. The frontend, in turn, links to the backend.",
+      image: "/assets/BookTalk.png",
+    tag: ["All", "Network"],
+    gitUrl: "https://github.com/TennoAndy/fe-cf5-project",
+    previewUrl: "https://cf5-book-talk.netlify.app/",
+  },
+  {
+    id: 3,
     title: "DiagonAlley",
     description:
       "DiagonAlley is a straightforward E-commerce app that allows you to add items to your basket and complete transactions.",
@@ -26,7 +36,7 @@ const projectsData = [
     previewUrl: "/not hosted",
   },
   {
-    id: 3,
+    id: 4,
     title: "Globly",
     description:
       "Globly is a social media app where users can connect with friends, create posts and more.",
@@ -36,7 +46,7 @@ const projectsData = [
     previewUrl: "https://fullstack-mern-globly.pages.dev/",
   },
   {
-    id: 4,
+    id: 5,
     title: "BlaBla",
     description:
       "BlaBla is a real-time chat platform where users can log in with Google or Facebook, create chat rooms, and engage in real-time conversations with friends, allowing them to send not only text but also images, files, and more.",
@@ -46,7 +56,7 @@ const projectsData = [
     previewUrl: "https://realtime-chat-blabla.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "PromptVerse",
     description:
       "PromptVerse is an app where users can create AI prompts, search for existing ones, and copy them for use with their preferred AI.",
@@ -56,7 +66,7 @@ const projectsData = [
     previewUrl: "https://fs-nextjs-ai-promptverse.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Pac-Man",
     description: "A simple classic Pac-Man with original sound effects",
     image: "/assets/Pac-Man.png",
@@ -65,7 +75,7 @@ const projectsData = [
     previewUrl: "https://minigame-pac-man.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Memory Game",
     description: "A simple match the cards memory game",
     image: "/assets/memory-game.png",

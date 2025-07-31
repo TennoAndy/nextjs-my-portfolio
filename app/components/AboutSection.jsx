@@ -9,44 +9,64 @@ const TAB_DATA = [
     id: "languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>Javascript</li>
+        <li>JavaScript</li>
         <li>HTML</li>
-        <li>CSS</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>SQL</li>
       </ul>
     ),
   },
   {
-    title: "FrontEnd",
+    title: "Frontend",
     id: "frontend",
     content: (
       <ul className="list-disc pl-2">
         <li>React</li>
-        <li>Bootstrap</li>
-        <li>Tailwind CSS</li>
-        <li>MUI</li>
-        <li>NextJs</li>
+        <li>Vue</li>
+        <li>Angular</li>
+        <li>Next.js</li>
         <li>Redux</li>
+        <li>Vite</li>
       </ul>
     ),
   },
   {
-    title: "BackEnd",
+    title: "Styling & UI",
+    id: "styling-ui",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Tailwind CSS</li>
+        <li>DaisyUI</li>
+        <li>Bootstrap</li>
+        <li>MUI (Material UI)</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Backend",
     id: "backend",
     content: (
       <ul className="list-disc pl-2">
-        <li>NodeJs</li>
+        <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL(PSQL)</li>
-        <li>MongoDB</li>
+        <li>Spring (Java)</li>
+        <li>.NET (C#)</li>
         <li>Firebase</li>
+        <li>Supabase</li>
+        <li>PostgreSQL</li>
+        <li>MySQL</li>
+        <li>Microsoft SQL Server</li>
+        <li>MongoDB</li>
       </ul>
     ),
   },
   {
-    title: "Testing",
-    id: "testing",
+    title: "Tools & Testing",
+    id: "tools-testing",
     content: (
       <ul className="list-disc pl-2">
+        <li>Postman</li>
         <li>Jest</li>
         <li>Supertest</li>
       </ul>
@@ -75,18 +95,21 @@ const AboutSection = () => {
           className="rounded-xl"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl  mb-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-yellow-500">About Me</h2>
+          <h2 className="text-4xl  mb-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-yellow-500">
+            About Me
+          </h2>
           <p className="text-base lg:text-lg ">
-            As a new self-taught aspiring developer and successful applicant to
-            Athens University of Economics coding factory program, I am
-            motivated and ready to embark on this exciting journey in my career.
-            With a humble personality and strong work ethic, I am approachable
-            and eager to collaborate with others as a strong team player. I am a
-            hard worker, dedicated to giving my best in every task I undertake.
-            My passion for development drives me to constantly learn new things
-            and hone my skills further. What I lack in formal education I make
-            up with enthusiasm, determination, and hunger for knowledge, which I
-            am confident will make me a valuable asset to any development team.
+            As a new software engineer and proud graduate of the Athens
+            University of Economics’ Coding Factory program, I am motivated and
+            ready to embark on this exciting journey in my career. With a humble
+            personality and strong work ethic, I am approachable and eager to
+            collaborate with others as a dedicated team player. I am a hard
+            worker, committed to giving my best in every task I undertake. My
+            passion for software engineering drives me to continuously learn new
+            things and refine my skills further. What I might lack in extensive
+            professional experience, I make up for with enthusiasm,
+            determination, and a hunger for knowledge, which I am confident will
+            make me a valuable asset to any engineering team.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
@@ -102,16 +125,22 @@ const AboutSection = () => {
               FrontEnd
             </TabButton>
             <TabButton
+              selectTab={() => handleTabChange("styling-ui")}
+              active={tab === "styling-ui"}
+            >
+              Styling & UI
+            </TabButton>
+            <TabButton
               selectTab={() => handleTabChange("backend")}
               active={tab === "backend"}
             >
               BackEnd
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("testing")}
-              active={tab === "testing"}
+              selectTab={() => handleTabChange("tools-testing")}
+              active={tab === "tools-testing"}
             >
-              Testing
+              Tools & Testing
             </TabButton>
           </div>
           <div className="mt-4">
